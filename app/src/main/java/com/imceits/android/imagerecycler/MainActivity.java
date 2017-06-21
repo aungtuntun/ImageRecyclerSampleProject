@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
                     JSONObject jsonUrls = jsonObject.getJSONObject("urls");
                    String imageUrl = jsonUrls.getString("regular");
-                    Log.i("test", imageUrl);
                     data.setImageUrl(imageUrl);
                     data.setLabel(" Image : " + (i+1));
                     imageList.add(data);
